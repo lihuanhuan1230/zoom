@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zoom</title>
+    <meta name="description" content="图片放大缩小 支持手机端 手势放大缩小">
+</head>
+<body>
+    <div>
+        <img class="imgZoom" src="./image.jpeg">
+    </div>
+</body>
+</html>
+
+<script src="./jquery.min.js"></script>
+<script src="./underscore.js"></script>
+<script src="./pinchzoom.js"></script>
+
+<script>
+    (function () {
+        let $img = $('.imgZoom')
+
+        new RTP.PinchZoom($img, {})
+    })()
+</script>
